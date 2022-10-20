@@ -1,5 +1,5 @@
-a=int(input("Sisesta esimene number:"))
-b=int(input("Sisesta teine number: "))
+a=int(input("Sisesta esimene arv:"))
+b=int(input("Sisesta teine arv: "))
 
 if(a<b):
     print("{} on väikseim".format(a))

@@ -13,5 +13,5 @@ print(len(thislist4))
 thislist5 = ('õun, mango, apelsin')
 print(thislist5)
 
-thislist6 = ('apelsin', 'mango', 'õun')
+thislist6 = ('apelsin, mango, õun')
 print(thislist6)

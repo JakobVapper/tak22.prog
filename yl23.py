@@ -1,17 +1,16 @@
 import os
 import random
 
-decks = input("Enter number of decks to use: ")
+decks = input("Sisesta mängude arv: ")
 
-# user chooses number of decks of cards to use
 deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]*(int(decks)*4)
 
-# initialize scores
 wins = 0
 losses = 0
 
 def deal(deck):
     hand = []
+
     for i in range(2):
         random.shuffle(deck)
         card = deck.pop()
@@ -20,17 +19,19 @@ def deal(deck):
         if card == 13:card = "K"
         if card == 14:card = "A"
         hand.append(card)
+
     return hand
 
 def play_again():
-    again = input("Do you want to play again? (Y/N) : ").lower()
+    again = input("Kas sa tahad uuesti mängida? (Y/N) : ").lower()
+    
     if again == "y":
         dealer_hand = []
         player_hand = []
         deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]*4
         game()
     else:
-        print("Bye!")
+        print("Gudbaeh!")
         exit()
 
 def total(hand):
@@ -62,7 +63,7 @@ def clear():
 def print_results(dealer_hand, player_hand):
     clear()
 
-    print("\n    WELCOME TO BLACKJACK!\n")
+    print("\n    BLACKJACK!\n")
     print("-"*30+"\n")
     print("    \033[1;32;40mWINS:  \033[1;37;40m%s   \033[1;31;40mLOSSES:  \033[1;37;40m%s\n" % (wins, losses))
     print("-"*30+"\n")

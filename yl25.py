@@ -1,14 +1,14 @@
 me = {
-  'eesnimi': 'Jakob',
-  'perenimi': 'Vapper',
-  'sünniaasta': 2006,
-  'elukoht': 'Muhu',
-  'magustoit': 'kohuke'
+  'first-name': 'Jakob',
+  'last-name': 'Vapper',
+  'birth-year': 2006,
+  'home': 'Muhu',
+  'dessert': 'kohuke'
 }
 
-print(me.get('elukoht'))
+print(me.get('home'))
 
-me['magustoit'] = 'jäätis'
+me['dessert'] = 'ice-cream'
 
 for k, v in me.items():
     print(k, v)
@@ -23,10 +23,19 @@ else:
 print(len(me))
 
 me = {
-  'eesnimi': 'Jakob',
-  'perenimi': 'Vapper',
-  'sünniaasta': 2006,
-  'elukoht': 'Muhu',
-  'magustoit': 'kohuke'
-  'pikkus': 1.8,
+  'first-name': 'Jakob',
+  'last-name': 'Vapper',
+  'birth-year': 2006,
+  'home': 'Muhu',
+  'dessert': 'kohuke',
+  'height': 1.8,
 }
+
+print(me.get('height'))
+
+del[me['birth-year']]
+
+me.clear()
+
+for k, v in me.items():
+    print(k, v)

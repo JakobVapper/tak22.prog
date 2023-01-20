@@ -1,7 +1,7 @@
 import os
 import random
 
-decks = input("Sisesta mängude arv: ")
+decks = input("Number of decks: ")
 
 deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]*(int(decks)*4)
 
@@ -23,7 +23,7 @@ def deal(deck):
     return hand
 
 def play_again():
-    again = input("Kas sa tahad uuesti mängida? (Y/N) : ").lower()
+    again = input("Want to play again? (Y/N) : ").lower()
     
     if again == "y":
         dealer_hand = []

@@ -10,6 +10,12 @@ print(me.get('home'))
 
 me['dessert'] = 'ice-cream'
 
+me['height'] = '1.80'
+
+del me['birth-year']
+
+me.clear()
+
 for k, v in me.items():
     print(k, v)
 
@@ -21,21 +27,3 @@ else:
     print('There is no personal code in the dictionary')
 
 print(len(me))
-
-me = {
-  'first-name': 'Jakob',
-  'last-name': 'Vapper',
-  'birth-year': 2006,
-  'home': 'Muhu',
-  'dessert': 'kohuke',
-  'height': 1.8,
-}
-
-print(me.get('height'))
-
-del[me['birth-year']]
-
-me.clear()
-
-for k, v in me.items():
-    print(k, v)

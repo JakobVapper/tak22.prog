@@ -80,7 +80,5 @@ for employee_name, employee_sales in sales.items():
 
         if profit > 0:
             profit_calc = profit * 0.062
-            print("Profit of " + str(profit_calc) + " in " + product)
             comission += profit * 0.062
-            comission = round(comission)
-    print(comission)
+    print(int(comission))

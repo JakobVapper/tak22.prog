@@ -23,10 +23,10 @@ commonWords = {'ja','aga','ei','ok','kas','mina','millal','kuidas','that','this'
 'at','about','would','like','there','You','from','get','just','more','so',
 'me','more','out','up','some','will','how','one','what',"don't",'should',
 'could','did','no','know','were','did',"it's",'This','he','The','we',
-'all','when','had','see','his','him','who','by','her','she','our','thing','-',
-'now','what','going','been','we',"I'm",'than','any','because','We','even','välja','oleks','veel','ära',
+'all','when','had','see','his','him','who','by','her','she','our','thing','-','siin','midagi','saab','palju','need','sa','Kas',
+'now','what','going','been','we',"I'm",'than','any','because','We','even','välja','oleks','veel','ära','ole','nad',
 'said','only','want','other','into','He','what','i','That','thought','et','nii','seda','pole','mis','oli','ma','ka','siis','kui','kui',
-'think',"that's",'Is','much','Eesti','nagu','See','ikka','selle','kes','Ma','oma','või','väga','ta','mingi','Kui','juba','seal'}
+'think',"that's",'Is','much','Eesti','nagu','See','ikka','selle','kes','Ma','oma','või','väga','ta','mingi','Kui','juba','seal','kõik'}
 
 for submission in subreddit.top(limit=500):
     submission.comments.replace_more(limit=0)

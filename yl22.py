@@ -1,24 +1,17 @@
 import random
 
-kasutaja = input("Sisesta valik(kivi, paber, käärid): ")
+user_action = input("Sisesta valik(kivi, paber, käärid): ")
 possible_actions = ["kivi", "paber", "käärid"]
-arvuti = random.choice(possible_actions)
-print(f"\nSina valisid {kasutaja}, arvuti valis {arvuti}.\n")
+computer_action = random.choice(possible_actions)
+print(f"\nSina valisid {user_action}, arvuti valis {computer_action}.\n")
 
-if kasutaja == arvuti:
-    print(f"Mõlemad valisid {kasutaja}. Viik!")
-elif kasutaja == "kivi":
-    if arvuti == "käärid":
-        print("Sina võidad!")
-    else:
-        print("Sina kaotad.")
-elif kasutaja == "paber":
-    if arvuti == "käärid":
-        print("Sina võidad!")
-    else:
-        print("Sina kaotad.")
-elif kasutaja == "käärid":
-    if arvuti == "paber":
-        print("Sina võidad!")
-    else:
-        print("Sina kaotad.")
+if user_action == computer_action:
+    print(f"Mõlemad valisid {user_action}. Viik!")
+elif user_action == "kivi" and computer_action == "käärid":
+    print("Sina võidad!")
+elif user_action == "paber" and computer_action == "kivi":
+    print("Sina võidad!")
+elif user_action == "käärid" and computer_action == "paber":
+    print("Sina võidad!")
+else:
+    print("Sina kaotad.")
